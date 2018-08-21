@@ -80,7 +80,7 @@ This gives particles with higher weights a better chance to "survive" the resamp
 The measures from the sensors are taken in the car's reference, meaning that all distances are from the car (or each particle) to the object, but the landmarks coordinates are in the map reference. So before assigning each observation to a landmark, we need to convert the observation's coordinates into map coordinates.
 
 
-Observations in the car coordinate system can be transformed into map coordinates (x<sub>m</sub> and y<sub>m</sub>) by passing car observation coordinates (x<sub>c</sub> and y<sub>c</sub>), map particle coordinates (xp and yp), and our rotation angle (-90 degrees) through a homogenous transformation matrix. This homogenous transformation matrix, shown below, performs rotation and translation.
+Observations in the car coordinate system can be transformed into map coordinates (x<sub>m</sub> and y<sub>m</sub>) by passing car observation coordinates (x<sub>c</sub> and y<sub>c</sub>), map particle coordinates (x<sub>p</sub> and y<sub>p</sub>), and our rotation angle (-90 degrees) through a homogenous transformation matrix. This homogenous transformation matrix, shown below, performs rotation and translation.
 
 ![u06](./ref/homogenouse-transformation.png)
 
